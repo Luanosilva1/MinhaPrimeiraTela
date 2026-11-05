@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Centraliza a caixa na tela */
+#login {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.caixa {
+    width: 400%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    width: 380px;
+    height: auto;
+    margin-bottom: 48px;
+}
+
+form {
+    width: 100%;
+}
+
+/* Campos */
+.campo {
+    margin-bottom: 0px;
+}
+
+.campo label {
+    display: block;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.campo input {
+    width: 120%;
+    height: 20px;
+    padding: 0 10px;
+    font-size: 15px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    background: #ffffff;
+}
+
+.campo input:focus {
+    outline: 2px solid #ea1d2c;
+    outline-offset: 1px;
+    border-color: #ea1d2c;
+}
+
+/* Links */
+.recuperacao-senha,
+.cadastro {
+    font-size: 14px;
+}
+
+.recuperacao-senha {
+    margin-top: 4px;
+}
+
+a {
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ea1d2c;
+}
+
+/* Botão Entrar */
+.entrar {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+.entrar input {
+    width: 75%;
+    height: 28px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    background: #ffffff;
+    border: 1px solid #555555;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.entrar input:hover {
+    background-color: #ea1d2c;
+    border-color: #ea1d2c;
+    color: #ffffff;
+}
+
+.entrar input:focus-visible {
+    outline: 2px solid #ea1d2c;
+    outline-offset: 2px;
+}
+
+.cadastro {
+    margin-top: 20px;
+}
+
+/* Telas pequenas */
+@media (max-width: 480px) {
+    .logo {
+        width: 140px;
+        margin-bottom: 32px;
+    }
+
+    .entrar input {
+        width: 100%;
+    }
+}
